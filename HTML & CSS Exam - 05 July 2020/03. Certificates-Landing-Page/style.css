@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@500&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  line-height: 1.8;
+  font-size: 1.1em;
+  overflow: visible;
+  font-family: 'Lato', sans-serif; 
+}
+
+.site-main {
+  position: relative;
+  overflow: hidden;
+}
+:root {
+  --carrier-support-font-color: #54556C;
+  /* --width: 300px;
+  --height: var(--width); */
+}
+
+/* div {
+  width: var(--width);
+  height: var(--height);
+  text-align: center;
+  background-color: var(--bg-color);
+} */
+
+section {
+  padding-top: 6em;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat', sans-serif;
+}
+
+li {
+ list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.site-header {
+  background-color: #fff;
+  position: relative;
+  z-index: 100;
+  padding: 1em 5em;
+  box-shadow: 0px 0px 14px gray;
+  display: flex;
+  align-items: center;
+}
+
+nav.site-nav {
+  margin-left: auto;
+  justify-content: center;
+}
+
+nav.site-nav ul li:last-child a {
+  background: #a068c9;
+  /* width: 50px; */
+  border: 2px solid transparent;
+  border-radius: 20px;
+  font-size: 0.9em;
+  color: white;
+  padding: inherit 23px;
+  padding-left: 13px;
+  padding-right: 15px;
+}
+
+.site-nav ul li {
+  display: inline-block;
+}
+
+.site-nav ul li a {
+  color: #444;
+  font-size: 1.1em;
+  padding: 12px 9px;
+  text-decoration: none;
+}
+
+/* main {
+  overflow: auto;
+} */
+
+.first-container,
+.second-container,
+.third-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 4em;
+}
+
+h3 {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+p {
+  margin-bottom: 0.8em;
+  font-size: 1.05em;
+}
+
+.content-container p:not(:nth-child(-n + 2)) {
+  opacity: 0.7;
+}
+
+section.diplomas-certificates {
+  display: flex;
+  /* position: relative;
+  z-index :1; */
+}
+
+.diplomas-certificates .content-container {
+  width: 60%;
+}
+
+.diplomas-certificates .image-container {
+  /* position: relative; */
+  /* display: block; */
+  margin-left: 5em;
+  width: 40%;
+}
+
+.diplomas-certificates .image-container > img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  /* left: 20%; */
+}
+
+section.diplomas-certificates .image-container::after {
+  content: "";
+  display: inline-block;
+  background: url("images/award.svg");
+  background-repeat: no-repeat;
+  background-position: 500 550;
+  height: 850px;
+  width: 850px;
+  position: absolute;
+  right: -2%;
+  top: -40%;
+  z-index: -1;
+  border-radius: 50%;
+  background-color: #606077;
+}
+
+.state-approved {
+  background: #2a2c40;
+  display: flex;
+  color: #fff;
+}
+
+.second-container .content,
+.second-container .image {
+  display: flex;
+}
+
+.second-container .content {
+  flex-wrap: wrap;
+}
+
+.state-approved .content {
+  width: 60%;
+}
+
+.state-approved h3 {
+  align-self: flex-end;
+  margin-bottom: 1em;
+}
+
+.state-approved .image {
+  justify-content: center;
+  width: 40%;
+}
+
+.state-approved img {
+  width: 70%;
+  position: relative;
+  top: 30%;
+  /* box-shadow: 10px 0 5px -2px #888; */
+}
+
+.carrier-support {
+display: flex;
+padding-top: 0;
+}
+.carrier-support h3, button {
+color: var(--carrier-support-font-color);
+}
+
+.carrier-support button {
+  border: 1px solid var(--carrier-support-font-color);
+  border-radius: 30px;
+}
+
+.carrier-support button > span{
+  /* display: inline-block; */
+  padding: 15px;
+  /* width: 100px; */
+}
+
+.carrier-support .image-wrapper {
+  margin-right: 3em;
+}
+
+.carrier-support .content {
+  /* padding: 0 auto; */
+  width: 90%;
+}
+
+.site-footer {
+  width: 100%;
+  background-color: #393945;
+  /* font-size: 1.3em; */
+}
+
+.site-footer .container {
+  width: 80%;
+  padding: 5px 0;
+  margin: 0 auto;
+ }
+
+.site-footer .container .list-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.site-footer .container .list-container > li {
+  flex:1 1 content;
+  margin-bottom: 10px;
+  padding: 20px 0; 
+  margin-right: 20px;
+}
+
+.site-footer ul li span {
+  font-size: 1.2em;
+  /* color : var(--carrier-support-font-color); */
+  color : #A169C9;
+  /* #A169C9 */
+}
+
+.site-footer .rights {
+  color: #fff;
+}
+
+.site-footer .icons, .site-footer .rights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.site-footer .rights {
+  /* margin-right: 4em; */
+  margin-top: 1em;
+}
+
+.site-footer .icons a i{
+  padding-right: 1.9em;
+}
