@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: 1.2em;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+p > span {
+  font-size: 2.5em;
+}
+
+header {
+  margin-bottom: 5em;
+}
+
+button.round {
+  border-radius: 30px;
+  padding: 15px 50px;
+}
+
+button.round:nth-of-type(1) {
+  background-color: #ee0303;
+  color: white;
+}
+
+.price {
+  font-weight: 800;
+  font-size: 1.8em;
+  padding-right: 5px;
+}
+
+.red {
+  color: red;
+}
+.site-layout {
+  display: grid;
+}
+
+.site-header nav.site-nav ul {
+  display: flex;
+  margin: 0;
+  justify-content: space-around;
+}
+
+.site-header nav {
+  margin: 2em 2em 5em 2em;
+}
+
+.site-header .header-content {
+  display: flex;
+}
+
+.site-header .header-content .left,
+.site-header .header-content .right {
+  flex: 1 1 50%;
+}
+
+.site-header .header-content .left {
+  align-self: center;
+}
+
+.header-content .left .inner {
+  margin: 0 auto;
+  max-width: 50%;
+}
+
+.header-content .right {
+  position: relative;
+  left: 1%;
+}
+
+.site-header nav ul li a {
+  color: rgb(197, 176, 176);
+}
+
+.site-main {
+  background-color: #ebecef;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.bold {
+  font-weight: 800;
+}
+
+.site-header {
+  background-color: #fff;
+}
+
+.main-content {
+  display: flex;
+  margin: 4em 0;
+}
+
+.main-content .left {
+  order: 0;
+}
+
+.main-content .right {
+  align-self: right;
+  order: 1;
+}
+
+.main-content .left,
+.main-content .right {
+  flex: 1 1 50%;
+  display: flex;
+}
+
+.main-content .left {
+  justify-content: center;
+}
+
+.main-content .right .inner {
+  flex: 0 0 80%;
+  margin-right: 5%;
+}
+
+.main-content p:nth-of-type(1) {
+  font-size: 1.6em;
+}
+
+.main-content p:nth-of-type(1) + p > span {
+  font-size: 1.5rem;
+}
+
+.powerbeats {
+  margin-left: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  position: relative;
+
+  margin-bottom: 5em;
+}
+
+.powerbeats p ~ p {
+  position: absolute;
+  top: 5em;
+  left: 4em;
+}
+
+.price-button {
+  display: flex;
+  max-width: 80%;
+  margin-top: 4em;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.price-button > span.price {
+  align-self: flex-end;
+}
+
+.read-more {
+  background-color: #545555;
+  display: flex;
+  justify-content: center;
+  height: 47vh;
+  text-align: center;
+  flex-wrap: wrap;
+  color: #fff;
+  padding: 2em 0;
+}
+
+.read-more > p {
+  flex: 1 1 100%;
+  align-self: center;
+}
+
+.read-more a {
+  align-self: center;
+  font-size: 2em;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.read-more p {
+  display: flex;
+  justify-content: center;
+}
+
+.read-more p > span {
+  flex: 0 0 18em;
+  align-self: center;
+}
+
+.read-more p > img {
+  width: 150px;
+}
+.read-more p {
+  font-weight: 200;
+}
+
+.give-life {
+  display: flex;
+}
+
+.give-life .left,
+.give-life .right {
+  flex: 1 1 50%;
+}
+
+.give-life .left img {
+  width: 100%;
+}
+
+.give-life img {
+  width: 200px;
+}
+
+.give-life .right {
+  display: flex;
+  justify-content: center;
+}
+
+.give-life .right img {
+  order: 1;
+  flex: 0 0 2em;
+  padding: 2em 0;
+}
+
+.give-life .right-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  max-width: 20%;
+}
+
+.give-life .right-text p:first-child > span {
+    font-weight: 800;
+    font-size: 4.5em;
+    color: #313131;
+}
+
+.give-life .right-text p  {
+    font-size: 1.5em;
+}
+
+footer p {
+  padding: 20px;
+  text-align: center;
+}
