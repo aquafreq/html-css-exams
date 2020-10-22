@@ -1,0 +1,94 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./images/background.png");
+  font-size: 1.6rem;
+}
+
+.image-wrapper > img:nth-child(1) {
+  border-radius: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+.main-content {
+  padding: 4rem 0;
+  max-width: 70%;
+  height: auto;
+  margin: auto;
+}
+.main-content .title {
+  display: flex;
+  padding: 2rem 0;
+  justify-content: space-around;
+}
+.main-content .inner {
+  display: flex;
+  justify-content: space-between;
+}
+.main-content .inner .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  flex: 1 1 20%;
+  background-color: white;
+  border: 2px solid grey;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+.main-content .inner .content-wrapper .description {
+  color: #6d6d6d;
+}
+.main-content .inner .content-wrapper img ~ * {
+  padding-top: 30px;
+  text-align: center;
+}
+.main-content .inner .content-wrapper .price {
+  color: purple;
+  font-weight: bold;
+}
+.main-content .inner .content-wrapper:not(:last-child) {
+  margin-right: 30px;
+}
+.main-content .primary {
+  color: #efd005;
+}
+.main-content .primary:before {
+  content: "--------";
+  display: inline-block;
+  color: #a7a7a7;
+  padding: 0 4px;
+}
+
+@media (min-width: 0) and (max-width: 700px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  body {
+    font-size: 1rem;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+  }
+  .title p.header:not(:last-child) {
+    margin-bottom: 3px;
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-content .inner .content-wrapper:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
